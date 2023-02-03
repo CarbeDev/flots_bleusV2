@@ -1,8 +1,12 @@
 FROM node:18-alpine
 
-COPY ./v2 .
+WORKDIR ./app
 
-RUN npm ci
-RUN npm run build
+COPY ./v2/package*.json ./
 
-CMD ["npx","serve","build"]
+RUN npm install
+
+COPY ./v2 ./
+EXPOSE 3000
+
+CMD ["npm","start"]
