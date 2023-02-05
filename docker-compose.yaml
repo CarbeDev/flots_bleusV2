@@ -1,0 +1,17 @@
+services:
+
+  api:
+    build: ./back
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./back/V2/:/app
+
+  front:
+    build: ./front
+    stdin_open: true
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./front/v2/public:/app/public
+      - ./front/v2/src:/app/src
