@@ -1,4 +1,4 @@
-package flots_bleusa.v2.security.model;
+package flots_bleus.v2.security.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

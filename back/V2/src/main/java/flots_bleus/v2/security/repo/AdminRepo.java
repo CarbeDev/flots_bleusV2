@@ -1,6 +1,6 @@
-package flots_bleusa.v2.security.repo;
+package flots_bleus.v2.security.repo;
 
-import flots_bleusa.v2.security.model.Admin;
+import flots_bleus.v2.security.model.Admin;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

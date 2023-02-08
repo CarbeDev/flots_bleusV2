@@ -1,6 +1,6 @@
-package flots_bleusa.v2.security;
+package flots_bleus.v2.security;
 
-import flots_bleusa.v2.security.service.UserDetailServiceImpl;
+import flots_bleus.v2.security.service.UserDetailServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,7 +1,7 @@
-package flots_bleusa.v2.security.service;
+package flots_bleus.v2.security.service;
 
-import flots_bleusa.v2.security.model.Admin;
-import flots_bleusa.v2.security.repo.AdminRepo;
+import flots_bleus.v2.security.model.Admin;
+import flots_bleus.v2.security.repo.AdminRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
