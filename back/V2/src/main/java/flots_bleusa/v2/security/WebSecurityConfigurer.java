@@ -34,7 +34,7 @@ public class WebSecurityConfigurer {
         http = http.cors().and().csrf().disable();
 
         http.authorizeHttpRequests()
-                .requestMatchers("/connexion").authenticated()
+                .requestMatchers("/connexion").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
