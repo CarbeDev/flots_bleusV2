@@ -10,5 +10,5 @@ public class Admin {
 
     @Id
     private String login;
-    private String password;
+    private String motDePasse;
 }

@@ -24,13 +24,13 @@ public class UserDetailServiceImpl implements UserDetailsService {
 
         Admin admin = repo.findByLogin(login);
 
-        return new User(admin.getLogin(),admin.getPassword(), new HashSet<>());
+        return new User(admin.getLogin(),admin.getMotDePasse(), new HashSet<>());
     }
 
-    public UserDetails loadAdmin(String login, String password) throws LoginException {
-        UserDetails admin = loadUserByUsername(login);
+    public UserDetails loadAdmin(Admin user) throws LoginException {
+        UserDetails admin = loadUserByUsername(user.getLogin());
 
-        if (BCrypt.checkpw(password,admin.getPassword())){
+        if (BCrypt.checkpw(user.getMotDePasse(),admin.getPassword())){
             return admin;
         }else {
             throw new LoginException("Mot de pas incorrect");
