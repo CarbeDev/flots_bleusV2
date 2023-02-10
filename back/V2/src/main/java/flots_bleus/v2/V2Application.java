@@ -1,4 +1,4 @@
-package flots_bleusa.v2;
+package flots_bleus.v2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

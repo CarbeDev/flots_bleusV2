@@ -1,4 +1,4 @@
-package flots_bleusa.v2;
+package flots_bleus.v2;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
